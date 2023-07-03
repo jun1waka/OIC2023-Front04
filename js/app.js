@@ -4,8 +4,11 @@ $(document).ready(function () {
     const resetButton = $('#resetButton');
     const counter = $('#counter');
     countButton.click(function () {
-      count++
-      counter.text(count);
-     
-  })
+        count++
+        counter.text(count);
+
+    });
+    resetButton.click(function () {
+        counter.text('リセット押した');
+    });
 });
